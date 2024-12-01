@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { Button, ButtonGroup, Dropdown, Menu, MenuButton, MenuItem } from "@mui/joy";
-import { useState, useRef } from "react";
+import "./navbar.css";
 
 export default function Navbar() {
   const router = useRouter();

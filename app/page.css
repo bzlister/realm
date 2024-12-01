@@ -1,0 +1,10 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20vh 5vw 5vw;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-evenly;
+}

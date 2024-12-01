@@ -2,7 +2,11 @@ import Navbar from "./navbar";
 import InitColorSchemeScript from "@mui/joy/InitColorSchemeScript";
 import { CssVarsProvider } from "@mui/joy/styles";
 import CssBaseline from "@mui/joy/CssBaseline";
-import ModeProvider from "./mode-provider";
+import ModeToggle from "./mode-toggle";
+
+export const metadata = {
+  title: "Ben Lister | Full-stack dev",
+};
 
 export default function RootLayout({
   children,
@@ -16,6 +20,7 @@ export default function RootLayout({
         <CssVarsProvider>
           <CssBaseline />
           <Navbar />
+          <ModeToggle />
           {children}
         </CssVarsProvider>
       </body>
