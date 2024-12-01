@@ -5,5 +5,9 @@ export const metadata = {
 };
 
 export default function Contact() {
-  return <ContactForm />;
+  return (
+    <div>
+      <ContactForm />
+    </div>
+  );
 }

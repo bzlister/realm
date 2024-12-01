@@ -1,17 +1,8 @@
-import localFont from "next/font/local";
-import "./globals.css";
 import Navbar from "./navbar";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
+import InitColorSchemeScript from "@mui/joy/InitColorSchemeScript";
+import { CssVarsProvider } from "@mui/joy/styles";
+import CssBaseline from "@mui/joy/CssBaseline";
+import ModeProvider from "./mode-provider";
 
 export default function RootLayout({
   children,
@@ -20,9 +11,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Navbar />
-        {children}
+      <body>
+        <InitColorSchemeScript defaultMode="system" />
+        <CssVarsProvider>
+          <CssBaseline />
+          <Navbar />
+          {children}
+        </CssVarsProvider>
       </body>
     </html>
   );

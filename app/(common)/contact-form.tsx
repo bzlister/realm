@@ -1,4 +1,6 @@
-import { FormEvent, useState } from "react";
+"use client";
+
+import { FormEvent } from "react";
 import { useForm } from "./form.hook";
 
 const hasValue = (s: string) => {
