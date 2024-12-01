@@ -8,3 +8,7 @@
   display: flex;
   justify-content: space-evenly;
 }
+
+.attention {
+  color: var(--joy-palette-attention);
+}

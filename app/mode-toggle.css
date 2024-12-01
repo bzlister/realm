@@ -1,0 +1,6 @@
+.mode-toggle {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 10px;
+  z-index: 9999;
+}
