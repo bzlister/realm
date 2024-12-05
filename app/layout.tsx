@@ -2,6 +2,7 @@ import { CssBaseline } from "@mui/joy";
 import InitColorSchemeScript from "@mui/joy/InitColorSchemeScript";
 import Navbar from "./navbar";
 import ThemeProvider from "./theme-provider";
+import "./layout.css";
 
 export const metadata = {
   title: "Ben Lister | Full-stack dev",

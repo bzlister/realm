@@ -1,4 +1,4 @@
-import { Typography } from "@mui/joy";
+import { Divider, Grid, Typography, Tabs, TabList, Tab, Button, ButtonGroup } from "@mui/joy";
 import "./page.css";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
           <h3>Full-stack engineer</h3>
         </div>
       </div>
-      <p></p>
+      <Divider />
     </div>
   );
 }

@@ -1,14 +1,21 @@
 .home-container {
   display: flex;
   flex-direction: column;
-  padding: 20vh 5vw 5vw;
+  padding: 5vh 2vw;
+  height: 100%;
 }
 
 .intro-container {
   display: flex;
   justify-content: space-evenly;
+  padding: 10vh 0;
 }
 
 .attention {
   color: var(--joy-palette-attention);
+}
+
+.details-container {
+  padding-top: 2vh;
+  flex-grow: 1;
 }
