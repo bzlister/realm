@@ -11,7 +11,7 @@ export default function Navbar() {
   const { mode, setMode } = useMode();
   return (
     <div className="navbar">
-      <ButtonGroup variant="plain" className="navbar-buttons">
+      <ButtonGroup variant="plain">
         <Button onClick={() => router.push("/")}>Home</Button>
         <Dropdown>
           <MenuButton variant="plain">Services</MenuButton>

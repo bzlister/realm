@@ -1,14 +1,22 @@
-.home-container {
-  display: flex;
-  flex-direction: column;
-  padding: 5vh 2vw;
+.page-container {
   height: 100%;
+  perspective: 1px;
+  perspective-origin: center center;
 }
 
 .intro-container {
   display: flex;
   justify-content: space-evenly;
   padding: 10vh 0;
+  transform-style: preserve-3d;
+}
+
+#triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10vh 100vw 0 0;
+  border-color: var(--joy-palette-background-body) var(--joy-palette-background-surface) transparent transparent;
 }
 
 .attention {
@@ -16,6 +24,8 @@
 }
 
 .details-container {
-  padding-top: 2vh;
-  flex-grow: 1;
+  position: absolute;
+  background-color: var(--joy-palette-background-surface);
+  width: 100%;
+  padding: 2vh 2vw;
 }

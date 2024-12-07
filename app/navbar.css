@@ -3,11 +3,8 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px;
-}
-
-.navbar-buttons {
-  flex: 1;
-  display: flex;
-  justify-content: center;
+  padding: 10px 10px 5px;
+  position: fixed;
+  background-color: var(--joy-palette-background-body);
+  z-index: 999;
 }
