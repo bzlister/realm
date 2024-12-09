@@ -1,4 +1,5 @@
-import { Divider, Typography } from "@mui/joy";
+import { Typography } from "@mui/joy";
+import ImageFrame from "./(common)/image-frame";
 import "./page.css";
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     <div className="page-container">
       <div>
         <div className="intro-container">
-          <div style={{ width: "20px", height: "20px" }}></div>
+          <ImageFrame alt="Personal photo" width={497} height={500} />
           <div className="intro">
             <Typography level="h1">
               Hey👋 I'm <Typography className="attention">Ben Lister</Typography>
