@@ -4,3 +4,11 @@
   top: 5px;
   right: 5px;
 }
+
+.placeholder {
+  width: 32px;
+  height: 32px;
+  border: 1px solid;
+  border-color: var(--variant-outlinedBorder, var(--joy-palette-neutral-outlinedBorder, var(--joy-palette-neutral-300, #CDD7E1)));
+  border-radius: var(--joy-radius-sm);
+}

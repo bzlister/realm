@@ -1,9 +1,7 @@
 "use client";
 
 import * as React from "react";
-import { useColorScheme } from "@mui/joy/styles";
-import IconButton, { IconButtonProps } from "@mui/joy/IconButton";
-
+import { IconButton, IconButtonProps, useColorScheme } from "@mui/joy";
 import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
 import LightModeIcon from "@mui/icons-material/LightMode";
 import "./mode-toggle.css";
@@ -15,8 +13,11 @@ export default function ModeToggle(props: IconButtonProps) {
   React.useEffect(() => {
     setMounted(true);
   }, []);
+
   if (!mounted) {
-    return <IconButton className="mode-toggle" size="sm" variant="outlined" color="neutral" {...other} sx={sx} disabled />;
+    return <div className="mode-toggle">
+      <div className="placeholder" />
+    </div>
   }
   return (
     <IconButton
