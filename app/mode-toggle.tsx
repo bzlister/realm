@@ -6,6 +6,7 @@ import IconButton, { IconButtonProps } from "@mui/joy/IconButton";
 
 import DarkModeRoundedIcon from "@mui/icons-material/DarkModeRounded";
 import LightModeIcon from "@mui/icons-material/LightMode";
+import "./mode-toggle.css";
 
 export default function ModeToggle(props: IconButtonProps) {
   const { onClick, sx, ...other } = props;
@@ -15,10 +16,11 @@ export default function ModeToggle(props: IconButtonProps) {
     setMounted(true);
   }, []);
   if (!mounted) {
-    return <IconButton size="sm" variant="outlined" color="neutral" {...other} sx={sx} disabled />;
+    return <IconButton className="mode-toggle" size="sm" variant="outlined" color="neutral" {...other} sx={sx} disabled />;
   }
   return (
     <IconButton
+      className="mode-toggle"
       data-screenshot="toggle-mode"
       size="sm"
       variant="outlined"

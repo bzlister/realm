@@ -7,9 +7,15 @@
 .intro-container {
   display: flex;
   justify-content: space-evenly;
-  padding: 10vh 0;
+  align-items: center;
+  flex-flow: row wrap;
   transform-style: preserve-3d;
   background-color: var(--joy-palette-background-body);
+  padding-top: 5px;
+}
+
+.intro {
+  margin: 5px;
 }
 
 #triangle {

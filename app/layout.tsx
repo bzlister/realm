@@ -3,9 +3,10 @@ import InitColorSchemeScript from "@mui/joy/InitColorSchemeScript";
 import Navbar from "./navbar";
 import ThemeProvider from "./theme-provider";
 import "./layout.css";
+import ModeToggle from "./mode-toggle";
 
 export const metadata = {
-  title: "Ben Lister | Full-stack dev",
+  title: "Ben Lister | Full-stack developer",
 };
 
 export default function RootLayout({
@@ -20,6 +21,7 @@ export default function RootLayout({
         <ThemeProvider>
           <CssBaseline />
           <Navbar />
+          <ModeToggle />
           {children}
         </ThemeProvider>
       </body>

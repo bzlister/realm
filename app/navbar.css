@@ -1,10 +1,9 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   padding: 10px 10px 5px;
-  position: fixed;
-  background-color: var(--joy-palette-background-body);
+  position: absolute;
   z-index: 999;
 }

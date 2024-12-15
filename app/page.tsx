@@ -1,5 +1,5 @@
 import { Typography } from "@mui/joy";
-import ImageFrame from "./(common)/image-frame";
+import ProfileImage from "./(common)/profile-image";
 import "./page.css";
 
 export default function Home() {
@@ -7,7 +7,7 @@ export default function Home() {
     <div className="page-container">
       <div>
         <div className="intro-container">
-          <ImageFrame alt="Personal photo" width={497} height={500} />
+          <ProfileImage />
           <div className="intro">
             <Typography level="h1">
               Hey👋 I'm <Typography className="attention">Ben Lister</Typography>
