@@ -26,7 +26,7 @@ export default function Home() {
             I iterate through this process to create apps and websites with <span className="attention">responsive user experiences</span> and backend systems that are <span className="attention">fast</span> and <span className="attention">reliable</span>.
           </p>
           <p>
-            Outside of my work, you can find me planning my next Path of Exile build, or hiking in Shenandoah listening to a sci-fi/fantasy audiobook.
+            Outside of my work, you can find me planning my next Path of Exile build, or hiking in Shenandoah while listening to a sci-fi/fantasy audiobook.
           </p>
         </div>
         <div className="details-section">

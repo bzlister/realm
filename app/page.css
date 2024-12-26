@@ -43,11 +43,11 @@
   color: var(--joy-palette-text-secondary);
   display: flex;
   flex-direction: column;
-  column-gap: 2vh;
+  column-gap: 1vh;
 }
 
 .details-section {
-  p {
+  & > *:not(:first-child) {
     margin-left: 1vw;
   }
 }
