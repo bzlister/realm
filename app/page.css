@@ -19,7 +19,7 @@
 }
 
 .intro {
-  margin: 5px;
+  margin: 10px;
 }
 
 #triangle {
@@ -39,14 +39,14 @@
   position: absolute;
   background-color: transparent;
   width: 100%;
-  padding: 2vh 2vw 2vh 2vw;
-  color: var(--joy-palette-text-secondary);
+  padding: 0vh 4vw 4vh 4vw;
   display: flex;
   flex-direction: column;
-  column-gap: 1vh;
+  column-gap: 5px;
 }
 
 .details-section {
+  color: var(--joy-palette-text-secondary);
   & > *:not(:first-child) {
     margin-left: 1vw;
   }

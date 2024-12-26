@@ -1,5 +1,6 @@
 import { Typography } from "@mui/joy";
 import ProfileImage from "./(common)/profile-image";
+import Experience from "./(common)/experience";
 import "./page.css";
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
         <div className="details-section">
           <h2>About me</h2>
           <p>
-            I think the act of programming is sublime.
+            I think programming is sublime.
             It is the process of expressing an idea using the tools offered by the system, while optimizing for a weighted combination of performance, simplicity, scalability, and development time.
             I iterate through this process to create apps and websites with <span className="attention">responsive user experiences</span> and backend systems that are <span className="attention">fast</span> and <span className="attention">reliable</span>.
           </p>
@@ -31,6 +32,10 @@ export default function Home() {
         </div>
         <div className="details-section">
           <h2>Experience</h2>
+          <Experience title="Microsoft - Software Engineer II" startYear="2019">Built e-commerce features for M365 Signup. Internal transfer to Power BI in 2022.</Experience>
+        </div>
+        <div className="details-section">
+          <h2>Projects</h2>
         </div>
       </div>
     </div>

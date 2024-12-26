@@ -1,0 +1,16 @@
+.experience-container {
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-right: 10px;
+    flex-flow: row wrap;
+}
