@@ -39,6 +39,15 @@
   position: absolute;
   background-color: transparent;
   width: 100%;
-  padding: 2vh 15vw 2vh 5vw;
-  color: var(--joy-palette-text-secondary)
+  padding: 2vh 2vw 2vh 2vw;
+  color: var(--joy-palette-text-secondary);
+  display: flex;
+  flex-direction: column;
+  column-gap: 2vh;
+}
+
+.details-section {
+  p {
+    margin-left: 1vw;
+  }
 }
