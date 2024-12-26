@@ -2,9 +2,11 @@
   margin: 5px;
 }
 
+/*
 img {
   filter: drop-shadow(4px 0 0.3px var(--joy-palette-neutral-outlinedBorder)) 
     drop-shadow(0 4px 0.3px var(--joy-palette-neutral-outlinedBorder))
     drop-shadow(-4px 0 0.3px var(--joy-palette-neutral-outlinedBorder)) 
     drop-shadow(0 -4px 0.3px var(--joy-palette-neutral-outlinedBorder));
 }
+    */

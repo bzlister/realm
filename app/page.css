@@ -4,7 +4,7 @@
   perspective-origin: center center;
 }
 
-.intro-container {
+.hero-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -12,6 +12,10 @@
   transform-style: preserve-3d;
   background-color: var(--joy-palette-background-body);
   padding-top: 5px;
+  min-height: 60vh;
+  h1 {
+    font-size: 2.6rem;
+  }
 }
 
 .intro {
@@ -22,17 +26,19 @@
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 10vh 100vw 0 0;
+  border-width: 12vh 100vw 0 0;
   border-color: var(--joy-palette-background-body) transparent transparent transparent;
 }
 
 .attention {
   color: var(--joy-palette-attention);
+  font-weight: bold;
 }
 
 .details-container {
   position: absolute;
   background-color: transparent;
   width: 100%;
-  padding: 2vh 2vw;
+  padding: 2vh 15vw 2vh 5vw;
+  color: var(--joy-palette-text-secondary)
 }
