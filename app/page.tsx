@@ -32,7 +32,14 @@ export default function Home() {
         </div>
         <div className="details-section">
           <h2>Experience</h2>
-          <Experience title="Microsoft - Software Engineer II" startYear="2019">Built e-commerce features for M365 Signup. Internal transfer to Power BI in 2022.</Experience>
+          <div className="experiences-container">
+            <Experience title="Microsoft - Software Engineer II" startYear="2020" endYear="Present" defaultExpanded>
+              Built e-commerce features for M365 Signup. Internal transfer to Power BI in 2022.
+            </Experience>
+            <Experience title="Microsoft - Software Engineer Intern" startYear="2019"></Experience>
+            <Experience title="CARFAX - Software Engineer Intern" startYear="2018">
+            </Experience>
+          </div>
         </div>
         <div className="details-section">
           <h2>Projects</h2>

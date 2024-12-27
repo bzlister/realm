@@ -16,11 +16,11 @@ export default function Experience(props: PropsWithChildren<ExperienceProps>) {
     const { title, startYear, endYear, defaultExpanded, children } = props;
     const [expanded, setExpanded] = useState(defaultExpanded ?? false);
 
-    return <Card className="experience-container">
+    return <Card className="experience-card">
         <div className="top-bar">
             <div className="title">
                 <Typography level="title-lg">{title}</Typography>
-                <span>{startYear} - {endYear ?? "Present"}</span>
+                <span>{endYear ? `${startYear} - ${endYear}` : startYear}</span>
             </div>
             <IconButton aria-label="Expand" onClick={() => setExpanded(!expanded)}>
                 {expanded ? <ExpandLess /> : <ExpandMore />}
