@@ -2,7 +2,6 @@
 
 import { useRouter } from "next/navigation";
 import { Button, ButtonGroup, Dropdown, Menu, MenuButton, MenuItem } from "@mui/joy";
-import ModeToggle from "./mode-toggle";
 import "./navbar.css";
 
 export default function Navbar() {

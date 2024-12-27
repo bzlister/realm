@@ -1,53 +1,58 @@
 "use client";
 
-import { FormEvent } from "react";
-import { useForm } from "./form.hook";
+import { useState } from "react";
+import { Card, Input, FormControl, FormLabel, Stack, Button, Textarea, FormHelperText } from "@mui/joy";
+import "./contact-form.css";
 
-const hasValue = (s: string) => {
+const hasValue = (s: string | undefined) => {
   if (!s) {
     return "This is required";
   }
 };
 
-const validateEmail = (e: string) => {
+const validateEmail = (e: string | undefined) => {
   return hasValue(e);
 };
 
-const validateMessage = (m: string) => {
+const validateMessage = (m: string | undefined) => {
   return hasValue(m);
 };
 
 export default function ContactForm() {
-  const [email, emailError, setEmail] = useForm(validateEmail);
-  const [message, messageError, setMessage] = useForm(validateMessage);
+  const [displayErrors, setDisplayErrors] = useState<{ email?: string, message?: string }>({});
+  const clearErrors = () => setDisplayErrors({});
 
-  const handleSubmit = (e: FormEvent) => {
-    e.preventDefault();
+  return <div className="contact-form">
+    <h2>Let's build something together.</h2>
+    <Card>
+      <form onSubmit={(event) => {
+        event.preventDefault();
+        const formData = new FormData(event.currentTarget);
+        const email = formData.get("email")?.toString();
+        const message = formData.get("message")?.toString();
+        const emailError = validateEmail(email);
+        const messageError = validateMessage(message);
+        if (emailError || messageError) {
+          setDisplayErrors({ email: emailError, message: messageError });
+          return;
+        }
 
-    if (emailError || messageError) {
-      return;
-    }
-
-    alert(`Send to: ${email}\n{message}`);
-
-    setEmail("");
-    setMessage("");
-  };
-
-  return (
-    <div className="contact-form">
-      <h2>Contact me</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="Enter your email" required />
-        </div>
-        <div>
-          <label htmlFor="message">Message</label>
-          <textarea id="message" value={message} onChange={(e) => setMessage(e.target.value)} placeholder="Enter your message" required />
-        </div>
-        <button type="submit">Submit</button>
+        alert(`Sent to ${email}:\n${message}`);
+      }}>
+        <Stack spacing={2}>
+          <FormControl error={!!displayErrors.email}>
+            <FormLabel>Email</FormLabel>
+            <Input placeholder="Enter your email" type="email" name="email" onChange={clearErrors} />
+            {displayErrors.email && <FormHelperText>{displayErrors.email}</FormHelperText>}
+          </FormControl>
+          <FormControl error={!!displayErrors.message}>
+            <FormLabel>Message</FormLabel>
+            <Textarea className="message-input" placeholder="Enter your message" name="message" onChange={clearErrors} />
+            {displayErrors.email && <FormHelperText>{displayErrors.email}</FormHelperText>}
+          </FormControl>
+          <Button className="submit-button" type="submit" variant="soft">Send</Button>
+        </Stack>
       </form>
-    </div>
-  );
+    </Card>
+  </div>;
 }

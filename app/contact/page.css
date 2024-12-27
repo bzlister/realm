@@ -1,0 +1,6 @@
+.contact-page {
+    padding-top: 10px;
+    & > * {
+        margin: 0px auto 0px auto;
+    }
+}

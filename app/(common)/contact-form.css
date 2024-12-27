@@ -1,0 +1,11 @@
+.contact-form {
+    max-width: calc(40em + 32px);
+}
+
+.message-input {
+    height: 5em;
+}
+
+.submit-button {
+    max-width: fit-content;
+}
