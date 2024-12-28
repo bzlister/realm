@@ -14,11 +14,13 @@
     "@mui/icons-material": "^6.1.9",
     "@mui/joy": "^5.0.0-beta.48",
     "next": "14.2.14",
+    "nodemailer": "^6.9.16",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",

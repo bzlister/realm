@@ -1,6 +1,8 @@
-.contact-page {
-    padding-top: 10px;
+.contact-container {
+    padding-top: 131px; /* height of navbar buttons */
+    margin-left: 5px;
+    margin-right: 5px;
     & > * {
-        margin: 0px auto 0px auto;
+        margin: 0 auto;
     }
 }
