@@ -2,6 +2,7 @@ import { Typography } from "@mui/joy";
 import ProfileImage from "./(common)/profile-image";
 import Experience from "./(common)/experience";
 import "./page.css";
+import Tags from "./(common)/tags";
 
 export default function Home() {
   return (
@@ -34,10 +35,18 @@ export default function Home() {
           <h2>Experience</h2>
           <div className="experiences-container">
             <Experience title="Microsoft - Software Engineer II" startYear="2020" endYear="Present" defaultExpanded>
-              Built e-commerce features for M365 Signup. Internal transfer to Power BI in 2022.
+              <ul>
+                <li><span>2022 - Present (SWE 2):</span>Developed features for pro users of Power BI desktop and service. Shipped a new UX in the model view. Lead developer in adding 1st-party support for calculation group authoring and for creating Direct Lake semantic models.</li>
+                <li><span>2020 - 2022 (SWE 1):</span>Developed features for the M365 Signup e-commerce platform. Built internal scenario testing framework. Lead developer in a UX redesign effort.</li>
+              </ul>
+              <Tags tags={["Angular", "React", "C#", "Typescript", "Redux"]}/>
             </Experience>
-            <Experience title="Microsoft - Software Engineer Intern" startYear="2019"></Experience>
+            <Experience title="Microsoft - Software Engineer Intern" startYear="2019">
+              <Tags tags={["C#", "C++", "Azure"]} />
+            </Experience>
             <Experience title="CARFAX - Software Engineer Intern" startYear="2018">
+              Learned agile practices. Built an internal tool for detecting deprecated business logic.
+              <Tags tags={["Java"]} />
             </Experience>
           </div>
         </div>
