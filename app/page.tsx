@@ -42,7 +42,7 @@ export default function Home() {
                   1st-party support for creating calculation groups, and the client integration for creating Direct Lake semantic models.
                 </p>
                 <p>
-                  In an earlier role, I created and maintained features for the M365 Signup e-commerce platform. Built internal scenario testing framework. Lead
+                  In an earlier role, I created and maintained features for the M365 e-commerce platform. Built internal scenario testing framework. Lead
                   developer in a UX redesign effort.
                 </p>
               </div>
