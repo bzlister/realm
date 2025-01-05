@@ -1,0 +1,21 @@
+.services-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  padding-top: 140px;
+  .service {
+    display: flex;
+    justify-content: space-between;
+    width: 30em;
+    height: 35vh;
+    .service-icon {
+      width: 10em;
+      height: 10em;
+      align-self: center;
+    }
+  }
+  .title {
+    text-align: center;
+    display: inline-block;
+  }
+}

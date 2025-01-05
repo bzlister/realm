@@ -6,8 +6,9 @@
 
 .image-container {
   border-radius: inherit inherit 0 0;
-  max-width: 260px;
-  flex-grow: 1;
+  max-width: 180px;
+  /* flex-grow: 1; */
+  aspect-ratio: 1 / 1;
   padding: 0;
   & > * {
     border-radius: inherit;
@@ -17,7 +18,7 @@
 .imageless-project {
   background-color: var(--joy-palette-attention);
   height: 100%;
-  max-width: 260px;
+  max-width: 180px;
 }
 
 .project-content {

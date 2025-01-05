@@ -47,7 +47,7 @@ export default function Home() {
                   developer in a UX redesign effort. Led efforts to improve reliabiliy to 3 9s.
                 </p>
               </div>
-              <Tags tags={["Angular", "React", "C#", "Typescript", "Redux"]} />
+              <Tags tags={["Angular", "React", "C#", ".NET", "Typescript", "Redux"]} />
             </Experience>
             <Experience title="Microsoft - Software Engineer Intern" startYear="2019">
               <p>Prototyped a pipeline for managing and assigning gig workloads. Investigated a bug in the Windows 11 out-of-box experience.</p>
@@ -83,7 +83,12 @@ export default function Home() {
               link="https://github.com/bzlister/munegascu"
               tags={["React", "Typescript"]}
             />
-            <Project title="This website" tags={["React", "NextJS", "Typescript", "MUI"]} />
+            <Project
+              title="This website"
+              img="/images/website.png"
+              alt="Rendition of this website's home page"
+              tags={["React", "NextJS", "Typescript", "MUI"]}
+            />
           </div>
         </div>
       </div>
