@@ -1,9 +1,10 @@
 .services-container {
   display: flex;
+  flex-flow: row wrap;
   justify-content: center;
-  column-gap: 20px;
   padding-top: 140px;
   .service {
+    margin: 10px;
     display: flex;
     justify-content: space-between;
     width: 30em;
@@ -15,7 +16,6 @@
     }
   }
   .title {
-    text-align: center;
-    display: inline-block;
+    align-self: center;
   }
 }
