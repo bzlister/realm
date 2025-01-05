@@ -6,16 +6,10 @@
   max-width: 450px;
   max-height: 450px;
   aspect-ratio: 1/1;
+  box-sizing: border-box;
+  img {
+    object-fit: contain;
+    filter: drop-shadow(4px 0 0.4px var(--joy-palette-neutral-outlinedBorder)) drop-shadow(0 4px 0.4px var(--joy-palette-neutral-outlinedBorder))
+      drop-shadow(-4px 0 0.4px var(--joy-palette-neutral-outlinedBorder)) drop-shadow(0 -4px 0.4px var(--joy-palette-neutral-outlinedBorder));
+  }
 }
-
-img {
-  object-fit: contain;
-}
-/*
-img {
-  filter: drop-shadow(4px 0 0.3px var(--joy-palette-neutral-outlinedBorder)) 
-    drop-shadow(0 4px 0.3px var(--joy-palette-neutral-outlinedBorder))
-    drop-shadow(-4px 0 0.3px var(--joy-palette-neutral-outlinedBorder)) 
-    drop-shadow(0 -4px 0.3px var(--joy-palette-neutral-outlinedBorder));
-}
-    */

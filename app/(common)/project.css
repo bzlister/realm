@@ -1,0 +1,25 @@
+.project {
+  width: 180px;
+  height: 260px;
+  display: flex;
+}
+
+.image-container {
+  border-radius: inherit inherit 0 0;
+  max-width: 260px;
+  flex-grow: 1;
+  padding: 0;
+  & > * {
+    border-radius: inherit;
+  }
+}
+
+.imageless-project {
+  background-color: var(--joy-palette-attention);
+  height: 100%;
+  max-width: 260px;
+}
+
+.project-content {
+  height: fit-content;
+}

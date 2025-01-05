@@ -4,7 +4,7 @@ import "./profile-image.css";
 export default function ProfileImage() {
   return (
     <div className="profile-image">
-      <Image src="/images/profile_circle.png" alt="Personal photo" fill />
+      <Image src="/images/profile_circle.png" alt="Personal photo" loading="lazy" fill />
     </div>
   );
 }
