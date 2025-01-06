@@ -79,6 +79,7 @@ export default function Home() {
             <Project
               title="Code typing animation"
               img="/images/munegascu.gif"
+              unoptimized
               alt="Animated gif displaying a typing animation of some Typescript code"
               link="https://github.com/bzlister/munegascu"
               tags={["React", "Typescript"]}

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Card, Input, FormControl, FormLabel, Stack, Button, Textarea, FormHelperText } from "@mui/joy";
+import CheckOutlined from "@mui/icons-material/CheckOutlined";
 import { sendMail } from "@/app/(actions)/send-mail";
 import "./contact-form.css";
 
@@ -34,8 +35,15 @@ export default function ContactForm() {
   return (
     <Card className="contact-form">
       <form
+        id="contact-form"
         onSubmit={async (event) => {
           event.preventDefault();
+          if (buttonState === "success") {
+            setButtonState("default");
+            (document.getElementById("contact-form") as any)?.reset();
+            return;
+          }
+
           const formData = new FormData(event.currentTarget);
           const email = formData.get("email")?.toString()?.toLowerCase()?.trim();
           const message = formData.get("message")?.toString()?.trim();
@@ -46,11 +54,15 @@ export default function ContactForm() {
             return;
           }
 
-          const response = await sendMail({ email: email!, subject: "New mail from personal website", text: message! });
-          if (response?.messageId) {
+          setButtonState("loading");
+          const success = true; //await sendMail({ email: email!, message: message! });
+          if (success) {
             setButtonState("success");
           } else {
-            setDisplayErrors({ email: "Failed to send message. This could be my fault, or it could be that you mistyped your email address." });
+            setDisplayErrors({
+              email:
+                "Failed to send message. Please check your email address and try again. If the error persists you can also email me directly at bzlister@gmail.com.",
+            });
             setButtonState("default");
           }
         }}
@@ -72,7 +84,7 @@ export default function ContactForm() {
             variant="soft"
             color={buttonState === "success" ? "success" : "primary"}
             loading={buttonState === "loading"}
-            disabled={buttonState !== "default"}
+            startDecorator={buttonState === "success" ? <CheckOutlined /> : undefined}
           >
             {buttonState === "success" ? "Sent" : "Send"}
           </Button>

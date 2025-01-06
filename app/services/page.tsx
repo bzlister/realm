@@ -1,7 +1,7 @@
 import { Card, Typography } from "@mui/joy";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import DevicesOutlinedIcon from "@mui/icons-material/DevicesOutlined";
-import { CodeOutlined } from "@mui/icons-material";
+import CodeOutlined from "@mui/icons-material/CodeOutlined";
 import "./page.css";
 
 export default function Services() {
