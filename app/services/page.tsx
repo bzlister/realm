@@ -1,11 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import { Modal, ModalClose, ModalDialog, DialogTitle, DialogContent } from "@mui/joy";
+import { Modal, ModalClose, ModalDialog, DialogTitle, DialogContent, Button } from "@mui/joy";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import CodeOutlined from "@mui/icons-material/CodeOutlined";
 import ServiceCard from "./service-card";
 import "./page.css";
+import TutoringDetails from "./tutoring-details";
+import Link from "next/link";
+import FreelancingDetails from "./freelancing-details";
 
 export default function Services() {
   const [dialog, setDialog] = useState<null | "tutoring" | "freelancing">(null);
@@ -13,19 +16,31 @@ export default function Services() {
   return (
     <div>
       <div className="services-container">
-        <ServiceCard
-          Icon={SchoolOutlinedIcon}
-          title="Tutoring"
-          description="Private/group instruction in computer science and software development. In-person or virtual."
-          onClick={() => setDialog("tutoring")}
-        />
-        <ServiceCard Icon={CodeOutlined} title="Freelancing" description="I can help develop your app or website." onClick={() => setDialog("freelancing")} />
+        <ServiceCard Icon={SchoolOutlinedIcon} title="Tutoring" onClick={() => setDialog("tutoring")} />
+        <ServiceCard Icon={CodeOutlined} title="Freelancing" onClick={() => setDialog("freelancing")} />
       </div>
-      <Modal aria-labelledby="Service popup" aria-describedby="Additional details for service" open={!!open} onClose={() => setDialog(null)}>
+      <Modal aria-labelledby="Service popup" aria-describedby="Additional details for service" open={!!dialog} onClose={() => setDialog(null)}>
         <ModalDialog className="popup" variant="soft">
-          <ModalClose sx={{ m: 1 }} />
-          <DialogTitle>{dialog}</DialogTitle>
-          <DialogContent>Lorem ipsum</DialogContent>
+          <DialogTitle>{dialog === "tutoring" ? "Need help studying for your technical interview?" : "I can help build your app or website."}</DialogTitle>
+          <DialogContent>
+            {dialog === "tutoring" ? (
+              <TutoringDetails>
+                <Link href="/contact">
+                  <Button variant="soft" sx={{ marginTop: "15px" }}>
+                    Contact me
+                  </Button>
+                </Link>
+              </TutoringDetails>
+            ) : (
+              <FreelancingDetails>
+                <Link href="/contact">
+                  <Button variant="soft" sx={{ marginTop: "15px" }}>
+                    Contact me
+                  </Button>
+                </Link>
+              </FreelancingDetails>
+            )}
+          </DialogContent>
         </ModalDialog>
       </Modal>
     </div>
