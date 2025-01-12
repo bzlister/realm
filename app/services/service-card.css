@@ -1,0 +1,16 @@
+.service-card {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+  height: 400px;
+  .service-icon {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    color: var(--joy-palette-attention);
+  }
+  .title {
+    align-self: center;
+  }
+}

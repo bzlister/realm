@@ -2,25 +2,22 @@
   width: 180px;
   height: 260px;
   display: flex;
-}
-
-.image-container {
-  border-radius: inherit inherit 0 0;
-  max-width: 180px;
-  /* flex-grow: 1; */
-  aspect-ratio: 1 / 1;
-  padding: 0;
-  & > * {
-    border-radius: inherit;
+  .image-container {
+    border-radius: inherit inherit 0 0;
+    max-width: 180px;
+    /* flex-grow: 1; */
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    & > * {
+      border-radius: inherit;
+    }
+    .imageless-project {
+      background-color: var(--joy-palette-attention);
+      height: 100%;
+      max-width: 180px;
+    }
   }
-}
-
-.imageless-project {
-  background-color: var(--joy-palette-attention);
-  height: 100%;
-  max-width: 180px;
-}
-
-.project-content {
-  height: fit-content;
+  .project-content {
+    height: fit-content;
+  }
 }

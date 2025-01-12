@@ -1,18 +1,20 @@
-"use client";
-
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 import { Button, ButtonGroup } from "@mui/joy";
 import "./navbar.css";
 
 export default function Navbar() {
-  const router = useRouter();
-
   return (
     <div className="navbar">
-      <ButtonGroup variant="plain" orientation="vertical">
-        <Button onClick={() => router.push("/")}>Home</Button>
-        <Button onClick={() => router.push("/services")}>Services</Button>
-        <Button onClick={() => router.push("/contact")}>Contact</Button>
+      <ButtonGroup className="button-group" variant="plain" orientation="vertical">
+        <Link href="/">
+          <Button>Home</Button>
+        </Link>
+        <Link href="/services">
+          <Button>Services</Button>
+        </Link>
+        <Link href="/contact">
+          <Button>Contact</Button>
+        </Link>
       </ButtonGroup>
     </div>
   );
