@@ -19,7 +19,7 @@ export default function Project({
   tags: string[];
 }) {
   return (
-    <Card className="project">
+    <Card className="project" aria-label={link ? "Clickable tile to navigate to project github repository" : "Project tile"}>
       <CardOverflow className="image-container">
         {img && alt ? <Image src={img} alt={alt} loading="lazy" unoptimized={unoptimized} fill /> : <div className="imageless-project" />}
       </CardOverflow>
