@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Modal, ModalClose, ModalDialog, DialogTitle, DialogContent, Button } from "@mui/joy";
+import { Modal, ModalDialog, DialogTitle, DialogContent, Button } from "@mui/joy";
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
 import CodeOutlined from "@mui/icons-material/CodeOutlined";
 import ServiceCard from "./service-card";
@@ -21,7 +21,7 @@ export default function Services() {
       </div>
       <Modal aria-labelledby="Service popup" aria-describedby="Additional details for service" open={!!dialog} onClose={() => setDialog(null)}>
         <ModalDialog className="popup" variant="soft">
-          <DialogTitle>{dialog === "tutoring" ? "Need help studying for your technical interview?" : "I can help build your app or website."}</DialogTitle>
+          <DialogTitle>{dialog === "tutoring" ? "Need help studying for your technical interview?" : "Let's build it together."}</DialogTitle>
           <DialogContent>
             {dialog === "tutoring" ? (
               <TutoringDetails>
