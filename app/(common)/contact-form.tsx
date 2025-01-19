@@ -55,7 +55,7 @@ export default function ContactForm() {
           }
 
           setButtonState("loading");
-          const success = true; //await sendMail({ email: email!, message: message! });
+          const success = await sendMail({ email: email!, message: message! });
           if (success) {
             setButtonState("success");
           } else {
