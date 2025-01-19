@@ -1,8 +1,7 @@
 import { Typography } from "@mui/joy";
 import ProfileImage from "./(common)/profile-image";
-import Experience from "./(common)/experience";
-import Tags from "./(common)/tags";
 import Project from "./(common)/project";
+import Experiences from "./(common)/experiences";
 import "./page.css";
 
 export default function Home() {
@@ -35,29 +34,7 @@ export default function Home() {
         </div>
         <div className="details-section">
           <h2>Experience</h2>
-          <div className="experiences-container">
-            <Experience title="Microsoft - Software Engineer II" startYear="2020" endYear="Present" defaultExpanded>
-              <div className="msft">
-                <p>
-                  Developed features for pro users of Power BI desktop and service. Lead developer for several projects including a new model view UX, adding
-                  1st-party support for creating calculation groups, and the client integration for creating Direct Lake semantic models.
-                </p>
-                <p>
-                  In an earlier role, I created and maintained features for the M365 e-commerce platform. Built internal scenario testing framework. Lead
-                  developer in a UX redesign effort. Led efforts to improve reliabiliy to 3 9s.
-                </p>
-              </div>
-              <Tags tags={["Angular", "React", "C#", ".NET", "Typescript", "Redux"]} />
-            </Experience>
-            <Experience title="Microsoft - Software Engineer Intern" startYear="2019">
-              <p>Prototyped a pipeline for managing and assigning gig workloads. Investigated a bug in the Windows 11 out-of-box experience.</p>
-              <Tags tags={["C#", "C++", "Azure"]} />
-            </Experience>
-            <Experience title="CARFAX - Software Engineer Intern" startYear="2018">
-              <p>Learned agile practices. Built an internal tool for detecting deprecated config files.</p>
-              <Tags tags={["Java"]} />
-            </Experience>
-          </div>
+          <Experiences />
         </div>
         <div className="details-section">
           <h2>Projects</h2>

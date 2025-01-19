@@ -51,12 +51,6 @@
   }
 }
 
-.experiences-container {
-  display: flex;
-  flex-direction: column;
-  row-gap: 5px;
-}
-
 .projects-container {
   display: flex;
   justify-content: flex-start;

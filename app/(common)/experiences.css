@@ -1,0 +1,14 @@
+.experiences {
+  border-radius: 10px;
+  background-color: var(--joy-palette-background-surface);
+  .experience {
+    padding: 12px;
+    .title-bar {
+      display: flex;
+      justify-content: space-between;
+      flex-grow: 1;
+      margin-right: 10px;
+      flex-flow: row wrap;
+    }
+  }
+}
