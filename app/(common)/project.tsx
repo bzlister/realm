@@ -1,4 +1,4 @@
-import { Card, CardContent, CardOverflow, Link, Typography } from "@mui/joy";
+import { Card, CardOverflow, Link, Typography } from "@mui/joy";
 import Image from "next/image";
 import Tags from "./tags";
 import "./project.css";
