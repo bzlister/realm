@@ -12,7 +12,7 @@ export default function Home() {
           <ProfileImage />
           <div className="intro">
             <Typography level="h1">
-              Hey👋 I'm <Typography className="attention">Ben Lister</Typography>
+              Hey<span className="wave">👋</span> I'm <Typography className="attention">Ben Lister</Typography>
             </Typography>
             <h3>Full-stack developer based in the D.C. metro area</h3>
           </div>
