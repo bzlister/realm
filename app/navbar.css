@@ -8,5 +8,8 @@
   z-index: 999;
   .button-group {
     align-items: center;
+    button {
+      font-size: var(--joy-fontSize-md);
+    }
   }
 }

@@ -89,6 +89,6 @@
 .projects-container {
   display: flex;
   justify-content: flex-start;
-  gap: 25px;
+  gap: 30px;
   flex-flow: row wrap;
 }
