@@ -24,7 +24,7 @@ export default function Home() {
           <h2>About me</h2>
           <p>
             I think programming is sublime. It is the process of expressing an idea using the tools offered by the system, while optimizing for a weighted
-            combination of performance, simplicity, scalability, and development time. I iterate through this process to create apps and websites with{" "}
+            combination of performance, simplicity, and scalability. I iterate through this process to create apps and websites with{" "}
             <span className="attention">responsive user experiences</span> and backend systems that are <span className="attention">fast</span> and{" "}
             <span className="attention">reliable</span>.
           </p>
