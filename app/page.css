@@ -92,3 +92,8 @@
   gap: 30px;
   flex-flow: row wrap;
 }
+
+.resume {
+  margin: 45px auto -25px auto;
+  text-align: center;
+}

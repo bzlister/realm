@@ -3,6 +3,7 @@ import ProfileImage from "./(common)/profile-image";
 import Project from "./(common)/project";
 import Experiences from "./(common)/experiences";
 import "./page.css";
+import Resume from "./resume/resume";
 
 export default function Home() {
   return (
@@ -68,6 +69,9 @@ export default function Home() {
               tags={["React", "NextJS", "Typescript", "MUI"]}
             />
           </div>
+        </div>
+        <div className="resume">
+          <Resume />
         </div>
       </div>
     </div>
