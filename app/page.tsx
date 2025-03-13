@@ -66,6 +66,7 @@ export default function Home() {
               title="This website"
               img="/images/website.png"
               alt="Rendition of this website's home page"
+              link="https://github.com/bzlister/realm"
               tags={["React", "NextJS", "Typescript", "MUI"]}
             />
           </div>
