@@ -65,7 +65,7 @@ export default function Home() {
               tags={["Flutter", "Dart"]}
             />
             <Project
-              title="Flutter + Firebase auth"
+              title="Firebase auth"
               img="/images/flutter_auth.png"
               alt="Screenshot of an app displaying a standard login UI"
               url="https://github.com/bzlister/auth-tutorial"

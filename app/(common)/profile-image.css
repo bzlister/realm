@@ -2,9 +2,9 @@
   margin: 15px;
   position: relative;
   flex-grow: 1;
-  flex-basis: 300px;
-  max-width: 400px;
-  max-height: 400px;
+  flex-basis: 200px;
+  max-width: 300px;
+  max-height: 300px;
   aspect-ratio: 1/1;
   box-sizing: border-box;
   img {
