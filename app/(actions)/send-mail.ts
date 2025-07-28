@@ -2,7 +2,7 @@
 
 import nodemailer from "nodemailer";
 
-export async function sendMail({ email, message }: { email: string; message: string }) {
+export async function sendMail({ email, message, subject }: { email: string; message: string; subject?: string }) {
   try {
     const SMTP_SERVER_HOST = process.env.SMTP_SERVER_HOST;
     const SMTP_SERVER_USERNAME = process.env.SMTP_SERVER_USERNAME;
@@ -27,7 +27,7 @@ export async function sendMail({ email, message }: { email: string; message: str
     const info = await transporter.sendMail({
       from: email,
       to: "bzlister@gmail.com",
-      subject: `New message from ${email}`,
+      subject: `[REALM]: ${subject || `New message from ${email}`}`,
       text: message,
     });
 

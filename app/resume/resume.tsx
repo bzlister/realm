@@ -3,6 +3,8 @@
 import { Button } from "@mui/joy";
 import DownloadIcon from "@mui/icons-material/Download";
 import { useState } from "react";
+import { sendMail } from "../(actions)/send-mail";
+import { Log } from "../(common)/logger";
 
 export default function Resume() {
   const [cachedPdfBlob, setCachedPdfBlob] = useState<Blob>();
@@ -21,7 +23,9 @@ export default function Resume() {
               pdfBlob = await response.blob();
               setCachedPdfBlob(pdfBlob);
             }
-          } catch {}
+          } catch (error: any) {
+            Log(`Error fetching resume:\r\n${error}`, true);
+          }
         } else {
           pdfBlob = cachedPdfBlob;
         }

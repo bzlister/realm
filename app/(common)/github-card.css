@@ -1,0 +1,8 @@
+.github-card {
+  max-width: 400px;
+}
+
+.github-card-title {
+  display: flex;
+  column-gap: 3px;
+}

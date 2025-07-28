@@ -15,6 +15,7 @@
       background-color: var(--joy-palette-attention);
       height: 100%;
       max-width: 190px;
+      padding: 10px;
     }
   }
   .project-content {

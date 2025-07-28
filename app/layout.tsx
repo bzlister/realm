@@ -2,11 +2,11 @@ import { CssBaseline } from "@mui/joy";
 import InitColorSchemeScript from "@mui/joy/InitColorSchemeScript";
 import Navbar from "./navbar";
 import ThemeProvider from "./theme-provider";
-import "./layout.css";
 import ModeToggle from "./mode-toggle";
+import "./layout.css";
 
 export const metadata = {
-  title: "Ben Lister | Full-stack developer",
+  title: "Ben Lister | Dev portfolio",
 };
 
 export default function RootLayout({
