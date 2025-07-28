@@ -1,9 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@mui/joy";
 import DownloadIcon from "@mui/icons-material/Download";
-import { useState } from "react";
-import { sendMail } from "../(actions)/send-mail";
 import { Log } from "../(common)/logger";
 
 export default function Resume() {
