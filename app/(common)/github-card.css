@@ -1,5 +1,6 @@
 .github-card {
-  max-width: 400px;
+  max-width: 380px;
+  flex-grow: 1;
 }
 
 .github-card-title {

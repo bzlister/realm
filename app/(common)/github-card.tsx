@@ -5,7 +5,7 @@ export default function GitHubCard({ name, maintainer, description }: { name: st
   const fullName = `${maintainer}/${name}`;
   const url = `https://github.com/${fullName}`;
   return (
-    <Card className="github-card">
+    <Card className="github-card" sx={{ "--Card-radius": "2px" }}>
       <Link target="_blank" rel="noopener noreferrer" href={url} underline="none" color="neutral" disabled={!url} overlay></Link>
       <div className="github-card-title">
         <GitHubRepoIcon />

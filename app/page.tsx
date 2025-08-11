@@ -92,6 +92,7 @@ export default function Home() {
           <h2>Contributions</h2>
           <div className="projects-container">
             <GitHubCard name="ProjectR.Backend" maintainer="classyk12" description="ProjectR 📅 — Smart Scheduling & Appointment Management" />
+            <GitHubCard name="air-convert" maintainer="feldroy" description="Utility for converting HTML to Air Tags" />
           </div>
         </div>
         <div className="resume">
