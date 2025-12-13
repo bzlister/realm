@@ -46,7 +46,7 @@ export default function Home() {
                 linkText="Kelp Forest Theme"
                 url="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode"
               />
-              <ListItemLink prefix="📖 Reading:" linkText="The Farseer Trilogy (Robin Hobb)" url="https://www.robinhobb.com/works.htm" />
+              <ListItemLink prefix="📖 Reading:" linkText="The Age of Madness Trilogy (Joe Abercrombie)" url="https://joeabercrombie.com/books/" />
             </List>
           </div>
         </div>

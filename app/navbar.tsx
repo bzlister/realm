@@ -9,9 +9,6 @@ export default function Navbar() {
         <Link href="/">
           <Button>Home</Button>
         </Link>
-        <Link href="/services">
-          <Button>Services</Button>
-        </Link>
         <Link href="/contact">
           <Button>Contact</Button>
         </Link>
