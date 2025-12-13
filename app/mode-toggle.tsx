@@ -15,34 +15,37 @@ export default function ModeToggle(props: IconButtonProps) {
   }, []);
 
   if (!mounted) {
-    return <div className="mode-toggle">
-      <div className="placeholder" />
-    </div>
+    return (
+      <div className="mode-toggle">
+        <div className="placeholder" />
+      </div>
+    );
   }
   return (
-    <IconButton
-      className="mode-toggle"
-      data-screenshot="toggle-mode"
-      size="sm"
-      variant="outlined"
-      color="neutral"
-      {...other}
-      onClick={(event) => {
-        if (mode === "light") {
-          setMode("dark");
-        } else {
-          setMode("light");
-        }
-        onClick?.(event);
-      }}
-      sx={[
-        mode === "dark" ? { "& > *:first-child": { display: "none" } } : { "& > *:first-child": { display: "initial" } },
-        mode === "light" ? { "& > *:last-child": { display: "none" } } : { "& > *:last-child": { display: "initial" } },
-        ...(Array.isArray(sx) ? sx : [sx]),
-      ]}
-    >
-      <DarkModeRoundedIcon />
-      <LightModeIcon />
-    </IconButton>
+    <div className="mode-toggle">
+      <IconButton
+        data-screenshot="toggle-mode"
+        size="sm"
+        variant="outlined"
+        color="neutral"
+        {...other}
+        onClick={(event) => {
+          if (mode === "light") {
+            setMode("dark");
+          } else {
+            setMode("light");
+          }
+          onClick?.(event);
+        }}
+        sx={[
+          mode === "dark" ? { "& > *:first-child": { display: "none" } } : { "& > *:first-child": { display: "initial" } },
+          mode === "light" ? { "& > *:last-child": { display: "none" } } : { "& > *:last-child": { display: "initial" } },
+          ...(Array.isArray(sx) ? sx : [sx]),
+        ]}
+      >
+        <DarkModeRoundedIcon />
+        <LightModeIcon />
+      </IconButton>
+    </div>
   );
 }
