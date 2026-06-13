@@ -17,7 +17,7 @@ export default function Home() {
             <Typography level="h1">
               Hey<span className="wave">👋</span> I'm <Typography className="attention">Ben Lister</Typography>
             </Typography>
-            <h3>Full-stack software engineer based in the D.C. metro area</h3>
+            <h3>Full-stack software engineer based in OC</h3>
           </div>
         </div>
         <div id="triangle"></div>
@@ -26,9 +26,8 @@ export default function Home() {
         <div className="details-section">
           <h2>About me</h2>
           <p>
-            Professional developer building <span className="attention">reliable backend systems</span> and{" "}
-            <span className="attention">thoughtful user experiences</span>. Let me know if you're solving complex problems using AI, data modeling, probability
-            theory, or distributed computing&mdash;I'd love to talk.
+            <span className="attention">Full-stack engineer</span> with a background in <span className="attention">machine learning</span>, building practical
+            AI products that turn complex data and business workflows into intuitive user experiences.
           </p>
           <div>
             <List size="md">
