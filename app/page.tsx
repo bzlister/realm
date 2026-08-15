@@ -27,7 +27,7 @@ export default function Home() {
           <h2>About me</h2>
           <p>
             Engineer with an MS in <span className="attention">machine learning</span>, building practical <span className="attention">AI products</span> that
-            turn complex data and business workflows into intuitive tools people actually use.
+            turn complex data and business workflows into intuitive tools.
           </p>
         </div>
         <div className="details-section">
