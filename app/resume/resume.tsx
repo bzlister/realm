@@ -44,7 +44,7 @@ export default function Resume() {
         }
       }}
     >
-      Resume
+      Download Resume
     </Button>
   );
 }
