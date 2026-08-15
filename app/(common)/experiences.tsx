@@ -1,6 +1,7 @@
 import { Accordion, AccordionSummary, AccordionDetails, AccordionGroup, Typography } from "@mui/joy";
 import Tags from "./tags";
 import "./experiences.css";
+import RealmLink from "./realm-link";
 
 export default function Experiences() {
   return (
@@ -9,21 +10,24 @@ export default function Experiences() {
         <TitleBar title="Microsoft - Software Engineer II" start="2020" end="Present" />
         <AccordionDetails>
           <p>
-            Developed features for pro users of Power BI desktop and service. Lead developer for several projects including a new model view UX, adding
-            1st-party support for creating calculation groups, and the client integration for creating Direct Lake semantic models.
+            At Microsoft, I build AI and data modeling experiences for Fabric — including core functionality for the{" "}
+            <RealmLink linkText="Power BI Modeling MCP server" url="https://github.com/microsoft/powerbi-modeling-mcp" />, backend services for the{" "}
+            <RealmLink linkText="web modeling Copilot" url="https://learn.microsoft.com/en-us/power-bi/transform-model/copilot-web-modeling" />, and{" "}
+            <RealmLink linkText="Direct Lake creator experiences" url="https://learn.microsoft.com/en-us/fabric/fundamentals/direct-lake-web-modeling" /> for
+            pro developers.
           </p>
           <p>
-            In an earlier role, I created and maintained features for the M365 e-commerce platform. Built internal scenario testing framework. Lead developer in
-            a UX redesign effort. Led efforts to improve reliabiliy to 3 9s.
+            Earlier, I worked on the Microsoft 365 e-commerce platform: checkout for trial-to-paid conversions, an internal scenario-testing framework, AliPay
+            payment support, and a cross-team reliability effort that took checkout from ~97% to 99.9%.
           </p>
-          <Tags tags={["Angular", "React", "C#", ".NET", "Typescript", "Redux"]} />
+          <Tags tags={["C#", ".NET", "MCP", "TypeScript", "Angular", "React"]} />
         </AccordionDetails>
       </Accordion>
       <Accordion className="experience">
         <TitleBar title="Microsoft - Software Engineer Intern" start="2019" />
         <AccordionDetails>
           <p>Prototyped a pipeline for managing and assigning gig workloads. Investigated a bug in the Windows 11 out-of-box experience.</p>
-          <Tags tags={["C#", "C++", "Azure"]} />
+          <Tags tags={["C#", "C++", "Azure Functions"]} />
         </AccordionDetails>
       </Accordion>
       <Accordion className="experience">

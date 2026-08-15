@@ -1,11 +1,11 @@
-import { Typography, List, SvgIcon } from "@mui/joy";
+import { Typography } from "@mui/joy";
 import ProfileImage from "./(common)/profile-image";
 import Project from "./(common)/project";
 import Experiences from "./(common)/experiences";
 import Resume from "./resume/resume";
-import ListItemLink from "./(common)/list-item-link";
-import "./page.css";
+import RealmLink from "./(common)/realm-link";
 import GitHubCard from "./(common)/github-card";
+import "./page.css";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
             <Typography level="h1">
               Hey<span className="wave">👋</span> I'm <Typography className="attention">Ben Lister</Typography>
             </Typography>
-            <h3>Full-stack software engineer based in OC</h3>
+            <h3>Backend & AI platform software engineer based in Orange, CA</h3>
           </div>
         </div>
         <div id="triangle"></div>
@@ -26,27 +26,9 @@ export default function Home() {
         <div className="details-section">
           <h2>About me</h2>
           <p>
-            <span className="attention">Full-stack engineer</span> with a background in <span className="attention">machine learning</span>, building practical
-            AI products that turn complex data and business workflows into intuitive user experiences.
+            Engineer with an MS in <span className="attention">machine learning</span>, building practical <span className="attention">AI products</span> that
+            turn complex data and business workflows into intuitive tools people actually use.
           </p>
-          <div>
-            <List size="md">
-              <ListItemLink
-                prefix="⌨️ Keyboard:"
-                linkText="Vortex Race 3"
-                url="https://vortexgear.store/products/race-3-micro-usb?srsltid=AfmBOopKb6VWHS0RNJsehMHVHjk-1DjRakW7IWgZb-BoIjgzG96YTpsN"
-              />
-              <ListItemLink
-                prefix={
-                  <span>
-                    <VSCodeIcon /> Theme:
-                  </span>
-                }
-                linkText="Kelp Forest Theme"
-                url="https://marketplace.visualstudio.com/items?itemName=jasontheiler.kelp-forest-theme-vscode"
-              />
-            </List>
-          </div>
         </div>
         <div className="details-section">
           <h2>Experience</h2>
@@ -75,14 +57,21 @@ export default function Home() {
               unoptimized
               alt="Animated gif displaying a typing animation of some Typescript code"
               url="https://github.com/bzlister/munegascu"
-              tags={["React", "Typescript"]}
+              tags={["React", "TypeScript"]}
             />
             <Project
               title="This website"
               img="/images/website.png"
               alt="Rendition of this website's home page"
               url="https://github.com/bzlister/realm"
-              tags={["React", "NextJS", "Typescript", "MUI"]}
+              tags={["React", "Next.js", "TypeScript", "MUI"]}
+            />
+            <Project
+              title="ForgeBeam"
+              img="/images/logo_flashlight_realm.png"
+              alt="Image of the ForgeBeam logo: a flashlight shining light on a Git merge icon, with the text 'ForgeBeam' in a bold, modern font"
+              url="https://forgebeam.net"
+              tags={["Azure", ".NET", "React", "PostgreSQL", "TypeScript"]}
             />
           </div>
         </div>
@@ -98,24 +87,5 @@ export default function Home() {
         </div>
       </div>
     </div>
-  );
-}
-
-function VSCodeIcon() {
-  return (
-    <SvgIcon className="vscode" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-      <path
-        d="M29.01,5.03,23.244,2.254a1.742,1.742,0,0,0-1.989.338L2.38,19.8A1.166,1.166,0,0,0,2.3,21.447c.025.027.05.053.077.077l1.541,1.4a1.165,1.165,0,0,0,1.489.066L28.142,5.75A1.158,1.158,0,0,1,30,6.672V6.605A1.748,1.748,0,0,0,29.01,5.03Z"
-        style={{ fill: "#0065a9" }}
-      />
-      <path
-        d="M29.01,26.97l-5.766,2.777a1.745,1.745,0,0,1-1.989-.338L2.38,12.2A1.166,1.166,0,0,1,2.3,10.553c.025-.027.05-.053.077-.077l1.541-1.4A1.165,1.165,0,0,1,5.41,9.01L28.142,26.25A1.158,1.158,0,0,0,30,25.328V25.4A1.749,1.749,0,0,1,29.01,26.97Z"
-        style={{ fill: "#007acc" }}
-      />
-      <path
-        d="M23.244,29.747a1.745,1.745,0,0,1-1.989-.338A1.025,1.025,0,0,0,23,28.684V3.316a1.024,1.024,0,0,0-1.749-.724,1.744,1.744,0,0,1,1.989-.339l5.765,2.772A1.748,1.748,0,0,1,30,6.6V25.4a1.748,1.748,0,0,1-.991,1.576Z"
-        style={{ fill: "#1f9cf0" }}
-      />
-    </SvgIcon>
   );
 }
